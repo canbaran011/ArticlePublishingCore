@@ -1,0 +1,11 @@
+﻿@{
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+    User Profile Layout
+<div class="col-md-3 PaddingLeft0">
+    @await Component.InvokeAsync("Profile")
+</div>
+<div class="col-md-9">
+    @RenderBody()
+</div>

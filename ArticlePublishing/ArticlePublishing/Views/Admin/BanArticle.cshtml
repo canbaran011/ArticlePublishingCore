@@ -1,0 +1,39 @@
+﻿@model ArticleViewModel
+@{
+    ViewData["Title"] = "BanArticle";
+}
+<h2>Ban Article</h2>
+
+<div class="container">
+    <div class="col-md-6">
+        <form asp-controller="Admin" asp-action="BanArticle" method="post">
+            @Html.HiddenFor(x => x.article.ID)
+            @Html.HiddenFor(x => x.complaints.ID)
+            <div class="input-group col-md-12">
+                <span class="input-group-addon " id="txtText">Title</span>
+                <input asp-for="article.Title" type="text" value="@Model.article.Title" class="form-control reportLabelTable" aria_describedby="txtTitle" readonly="readonly" Style="font-weight:bold;" maxlenght=50 />
+            </div> <br />
+                   <div class="input-group col-md-12">
+                       <span class="input-group-addon " id="txtText">Subject</span>
+                       <input asp-for="complaints.Subject" type="text" value="@Model.complaints.Subject" class="form-control reportLabelTable" aria_describedby="txtTitle" readonly="readonly" Style="font-weight:bold;" maxlenght=50 />
+                       @*maxlenght 50 yi aştığı zaman hata verebilir bakılacak*@
+                   </div> <br />
+
+            <div class="input-group">
+                <span class="input-group-addon " id="txtText">Reason</span>
+                <textarea asp-for="bannedArticles.Reason" type="text" class="form-control" placeholder="Enter reason" rows="10" required="required" aria_describedby="txtText" value="@Model.complaints.Text" style="resize:none"></textarea>
+            </div> <br />
+            <div class="input-group">
+                <span class="input-group-addon " id="txtText">Banned Limit(Day)</span>
+                <input asp-for="bannedArticles.BannedLimit" type="text" class="form-control" placeholder="Enter ban limit" required="required" aria_describedby="txtText" value="3" />
+                @*düzeltmesi istenebilir direkt silmiyoruz*@
+            </div> <br />
+            <input class="btn btn-info" type="submit">
+
+        </form>
+        <br /><br />
+        <div class="alert alert-@ViewBag.Status" role="alert">@ViewBag.Warning</div>
+    </div>
+</div>
+@*blog banlanmazsa neden banlanmadığı hakkında bilgi girilmeli yine şikayet tablosunda result kolonu oluşturup yetersiz delil olarak girilebilir*@
+

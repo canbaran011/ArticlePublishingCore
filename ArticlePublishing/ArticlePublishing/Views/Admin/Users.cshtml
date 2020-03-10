@@ -1,0 +1,273 @@
+﻿@model AdminViewModel
+@{
+    ViewData["Title"] = "Users";
+    Layout = "~/Views/Shared/_UserProfileLayout.cshtml";
+}
+
+<br /><br />
+
+
+@if (Model.superadmin == true)
+{
+    <h2>All Admins</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th><b>Add/Remove admin</b></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    User name: <input id="txtUserName" type="text" name="name" placeholder="Enter a user name" />
+                    <input class="btn btn-success btn-xs addAdmin" type="button" name="name" value="Add" />
+                    <input class="btn btn-danger btn-xs deleteAdmin" type="button" name="name" value="Delete" />
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>User Name</th>
+                <th>Email</th>
+                <th>Name Surname</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.useradminList)
+            {
+                string status = "info";
+                if (item.AccountStatus == false)
+                {
+                    status = "danger";
+                }
+
+                if (item.BannedStatus == true)
+                {
+                    status = "warning";
+                }
+                <tr class=@status>
+                    <td><a href="/Account/UserInformation/@item.ID">@item.UserName</a></td>
+                    <td>@item.Email</td>
+                    <td>@item.Name&nbsp;@item.Surname</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+}
+
+
+
+
+
+<h2>All Users</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th><b>Ban/Unaban User</b></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                User name: <input id="txtUserName2" type="text" name="name" placeholder="Enter a user name" />
+                <input class="btn btn-warning btn-xs banUser" type="button" name="name" value="Ban" />
+                <input class="btn btn-success btn-xs unBanUser" type="button" name="name" value="Unban" />
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Account Status</th>
+            <th>User ID</th>
+            <th>User Name</th>
+            <th>Email</th>
+            <th>Name Surname</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.userList)
+        {
+            string status = "success";
+            string value = "Active";
+            if (item.AccountStatus == false)
+            {
+                status = "default";
+                value = "Inactive";
+            }
+
+            if (item.BannedStatus == true)
+            {
+                status = "warning";
+                value = "Banned";
+            }
+            <tr>
+                <td>
+                    <label class="label label-@status ">@value </label>
+                </td>
+                <td>@item.ID</td>
+                <td><a href="/Account/UserInformation/@item.ID">@item.UserName</a></td>
+                <td>@item.Email</td>
+                <td>@item.Name&nbsp;@item.Surname</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+<br /><br />
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="~/Content/jquery-confirm.min.css" />
+<script type="text/javascript" src="~/Scripts/jquery-confirm.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".deleteAdmin").click(function () {
+            var username = $("#txtUserName").val();
+                $.confirm({
+                    theme: 'light',
+                    boxWidth: '30%',
+                    title: '',
+                    content: 'Are you sure to delete user from adminlist?',
+                    buttons: {
+                        Yes: {
+                            text: 'Yes',
+                            keys: ['enter', 'shift'],
+                            action: function () {
+
+                                $.ajax({
+                                    type: "POST",
+                                    url: '@Url.Action("DeleteAdmin", "Admin")',
+                                    data: { username: username },
+                                    success: function (data) {
+                                        window.location.reload();
+                                    },
+                                    error: function (data) {
+                                        $.alert({
+                                            title: 'Alert',
+                                            content: "eror",
+                                        });
+                                    }
+                                });
+                            }
+                        },
+                        No: function () {
+                        }
+                    }
+                });
+        });
+
+
+         $(".addAdmin").click(function () {
+            var username = $("#txtUserName").val();
+                $.confirm({
+                    theme: 'light',
+                    boxWidth: '30%',
+                    title: '',
+                    content: 'Are you sure to add user as admin?',
+                    buttons: {
+                        Yes: {
+                            text: 'Yes',
+                            keys: ['enter', 'shift'],
+                            action: function () {
+
+                                $.ajax({
+                                    type: "POST",
+                                    url: '@Url.Action("AddAdmin", "Admin")',
+                                    data: { username: username },
+                                    success: function () {
+                                            window.location.reload();
+                                    },
+                                    error: function () {
+                                        $.alert({
+                                            title: 'Alert',
+                                            content: "User all ready admin!",
+                                        });
+                                    }
+                                });
+                            }
+                        },
+                        No: function () {
+                        }
+                    }
+                });
+            });
+
+  $(".banUser").click(function () {
+            var username = $("#txtUserName2").val();
+                $.confirm({
+                    theme: 'light',
+                    boxWidth: '30%',
+                    title: '',
+                    content: 'Are you sure to ban user?',
+                    buttons: {
+                        Yes: {
+                            text: 'Yes',
+                            keys: ['enter', 'shift'],
+                            action: function () {
+
+                                $.ajax({
+                                    type: "POST",
+                                    url: '@Url.Action("BanUser", "Admin")',
+                                    data: { username: username },
+                                    success: function (data) {
+                                        window.location.reload();
+                                    },
+                                    error: function (data) {
+                                        $.alert({
+                                            title: 'Alert',
+                                            content: "eror",
+                                        });
+                                    }
+                                });
+                            }
+                        },
+                        No: function () {
+                        }
+                    }
+                });
+        });
+
+
+         $(".unBanUser").click(function () {
+            var username = $("#txtUserName2").val();
+                $.confirm({
+                    theme: 'light',
+                    boxWidth: '30%',
+                    title: '',
+                    content: 'Are you sure to unban user?',
+                    buttons: {
+                        Yes: {
+                            text: 'Yes',
+                            keys: ['enter', 'shift'],
+                            action: function () {
+
+                                $.ajax({
+                                    type: "POST",
+                                    url: '@Url.Action("UnbanUser", "Admin")',
+                                    data: { username: username },
+                                    success: function () {
+                                            window.location.reload();
+                                    },
+                                    error: function () {
+                                        $.alert({
+                                            title: 'Alert',
+                                            content: "User all ready admin!",
+                                        });
+                                    }
+                                });
+                            }
+                        },
+                        No: function () {
+                        }
+                    }
+                });
+            });
+
+    });
+</script>

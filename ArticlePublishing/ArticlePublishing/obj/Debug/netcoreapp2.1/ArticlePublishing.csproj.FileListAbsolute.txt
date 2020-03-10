@@ -1,0 +1,96 @@
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\bin\Debug\netcoreapp2.1\ArticlePublishing.deps.json
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\bin\Debug\netcoreapp2.1\ArticlePublishing.runtimeconfig.json
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\bin\Debug\netcoreapp2.1\ArticlePublishing.runtimeconfig.dev.json
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\bin\Debug\netcoreapp2.1\ArticlePublishing.dll
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\ArticlePublishing.csproj.CoreCompileInputs.cache
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\ArticlePublishing.RazorAssemblyInfo.cache
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\ArticlePublishing.RazorAssemblyInfo.cs
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\ArticlePublishing.AssemblyInfoInputs.cache
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\ArticlePublishing.AssemblyInfo.cs
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\ArticlePublishing.RazorTargetAssemblyInfo.cache
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\bin\Debug\netcoreapp2.1\ArticlePublishing.pdb
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\ArticlePublishing.dll
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\ArticlePublishing.pdb
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\bin\Debug\netcoreapp2.1\ArticlePublishing.Views.dll
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\ArticlePublishing.TagHelpers.input.cache
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\ArticlePublishing.TagHelpers.output.cache
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\ArticlePublishing.RazorCoreGenerate.cache
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\ArticlePublishing.RazorTargetAssemblyInfo.cs
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\ArticlePublishing.csproj.CopyComplete
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_MainLayout.g.cshtml.cs
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_UserProfileLayout.g.cshtml.cs
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\Navbar\Default.g.cshtml.cs
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\bin\Debug\netcoreapp2.1\ArticlePublishing.Views.pdb
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\ArticlePublishing.Views.pdb
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Account\UserInformation.g.cshtml.cs
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Account\UserArticles.g.cshtml.cs
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Account\UserFavouriteArticles.g.cshtml.cs
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Account\Profiles.g.cshtml.cs
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Account\DeleteAccount.g.cshtml.cs
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Account\Login.g.cshtml.cs
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Account\Register.g.cshtml.cs
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Account\UpdateInformation.g.cshtml.cs
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Account\ChangePassword.g.cshtml.cs
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Article\UserArticle.g.cshtml.cs
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Article\ArticleCategories.g.cshtml.cs
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\ArticlePublishing.csprojAssemblyReference.cache
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Article\AddArticle.g.cshtml.cs
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Article\ReadArticle.g.cshtml.cs
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Article\FavouriteArticles.g.cshtml.cs
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Article\ReportArticle.g.cshtml.cs
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Users.g.cshtml.cs
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Admin\BanArticle.g.cshtml.cs
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Complaints.g.cshtml.cs
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\Profile\Default.g.cshtml.cs
+C:\Users\Burak\Desktop\7.Donem\4.Web Programming\APDP\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Account\ForgotPassword.g.cshtml.cs
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\bin\Debug\netcoreapp2.1\ArticlePublishing.deps.json
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\bin\Debug\netcoreapp2.1\ArticlePublishing.runtimeconfig.json
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\bin\Debug\netcoreapp2.1\ArticlePublishing.runtimeconfig.dev.json
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\bin\Debug\netcoreapp2.1\ArticlePublishing.dll
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\bin\Debug\netcoreapp2.1\ArticlePublishing.pdb
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\bin\Debug\netcoreapp2.1\ArticlePublishing.Views.dll
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\bin\Debug\netcoreapp2.1\ArticlePublishing.Views.pdb
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\ArticlePublishing.csprojAssemblyReference.cache
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\ArticlePublishing.csproj.CoreCompileInputs.cache
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\ArticlePublishing.RazorAssemblyInfo.cache
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\ArticlePublishing.RazorAssemblyInfo.cs
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\ArticlePublishing.AssemblyInfoInputs.cache
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\ArticlePublishing.AssemblyInfo.cs
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\ArticlePublishing.TagHelpers.input.cache
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\ArticlePublishing.TagHelpers.output.cache
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\ArticlePublishing.RazorCoreGenerate.cache
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Account\ChangePassword.g.cshtml.cs
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Account\DeleteAccount.g.cshtml.cs
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Account\ForgotPassword.g.cshtml.cs
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Account\Login.g.cshtml.cs
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Account\Profiles.g.cshtml.cs
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Account\Register.g.cshtml.cs
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Account\UpdateInformation.g.cshtml.cs
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Account\UserArticles.g.cshtml.cs
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Account\UserFavouriteArticles.g.cshtml.cs
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Account\UserInformation.g.cshtml.cs
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Admin\BanArticle.g.cshtml.cs
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Complaints.g.cshtml.cs
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Users.g.cshtml.cs
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Article\AddArticle.g.cshtml.cs
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Article\ArticleCategories.g.cshtml.cs
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Article\FavouriteArticles.g.cshtml.cs
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Article\ReadArticle.g.cshtml.cs
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Article\ReportArticle.g.cshtml.cs
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Article\UserArticle.g.cshtml.cs
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\Navbar\Default.g.cshtml.cs
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\Profile\Default.g.cshtml.cs
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_MainLayout.g.cshtml.cs
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_UserProfileLayout.g.cshtml.cs
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\ArticlePublishing.RazorTargetAssemblyInfo.cache
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\ArticlePublishing.RazorTargetAssemblyInfo.cs
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\ArticlePublishing.Views.pdb
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\ArticlePublishing.dll
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\ArticlePublishing.pdb
+C:\Users\canba\Desktop\apdp\ArticlePublishing\ArticlePublishing\obj\Debug\netcoreapp2.1\ArticlePublishing.csproj.CopyComplete

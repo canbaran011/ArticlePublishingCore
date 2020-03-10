@@ -1,0 +1,46 @@
+﻿@model Users
+@{
+    ViewData["Title"] = "UpdateInformation";
+    Layout = "~/Views/Shared/_UserProfileLayout.cshtml";
+}
+
+<h2>UpdateInformation</h2>
+
+<h2>Register</h2>
+<div class="col-md-6">
+
+    <form asp-controller="Account" method="post" asp-action="UpdateInformation" enctype="multipart/form-data">
+        <div class="input-group">
+            <span class="input-group-addon " id="txtName">Name</span>
+            <input asp-for="Name" type="text" name="Name" class="form-control" placeholder="Enter your Name" required="required" aria_describedby="txtName" />
+        </div> <br />
+        <div class="input-group">
+            <span class="input-group-addon" id="txtSurname">Surname</span>
+            <input asp-for="Surname" type="text" name="Surname" class="form-control" placeholder="Enter your Surname" required="required" aria_describedby="txtSurname" />
+        </div> <br />
+        <div class="input-group">
+            <span class="input-group-addon" id="txtEmail">E-Mail</span>
+            <input asp-for="Email" type="email" name="Email" class="form-control" placeholder="Enter your Email" required="required" aria_describedby="txtEmail" />
+        </div> <br />
+        <div class="input-group">
+            <span class="input-group-addon" id="txtNickName">Nick Name</span>
+            <input asp-for="UserName" type="text" name="UserName" class="form-control" placeholder="Enter your NickName" required="required" aria_describedby="txtNickName" />
+        </div> <br />
+        <div class="input-group">
+            <span class="input-group-addon" id="txtAdress">Adress</span>
+            <input asp-for="Adress" type="text" name="Adress" class="form-control" placeholder="Enter your Adress" rows="2" required="required" aria_describedby="txtAdress" />
+        </div> <br />
+        <div class="input-group">
+            <span class="input-group-addon" id="txtPhone">Phone</span>
+            <input asp-for="Phone" type="tel" name="Phone" class="form-control" maxlength="12" placeholder="506 123 1212" aria_describedby="txtPhone" />
+            @*pattern="[0-9]{3} [0-9]{3} [0-9]{4}" required="required" *@
+        </div> <br />
+        <div>
+            <input type="file" id="file" name="file" accept="image/*"> <br />
+        </div> <br />
+        <input type="submit" class="btn btn-info" name="name" value="Save changes" />
+    </form>
+    <br /><br />
+    <div class="alert alert-@ViewBag.Status" role="alert">@ViewBag.Warning</div>
+
+</div>

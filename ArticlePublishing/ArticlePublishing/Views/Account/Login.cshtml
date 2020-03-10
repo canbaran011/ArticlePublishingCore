@@ -1,0 +1,22 @@
+﻿@model Users
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+
+<h2>Login</h2>
+<div class="col-md-6">
+    <form method="post" asp-controller="Account" asp-action="Login">
+        <input asp-for="Email" type="text" name="Email" class="form-control" placeholder="Enter your Email or Nickname" required="required" /><br />
+        <input asp-for="Password" type="password" name="Password" class="form-control" placeholder="Enter your Password" required="required" /><br />
+        <button class="btn btn-primary" type="submit">Login</button> <br /><br />
+        <a asp-controller="Account" asp-action="ForgotPassword" class="label label-default">Forgot password ? </a>
+    </form>
+    <br /><br />
+    <div class="alert alert-@ViewBag.Status" role="alert">@ViewBag.Warning</div>
+    @if (ViewBag.ForgotPass != null)
+    {
+        <div class="alert alert-success" role="alert">@ViewBag.ForgotPass</div>
+    }
+</div>

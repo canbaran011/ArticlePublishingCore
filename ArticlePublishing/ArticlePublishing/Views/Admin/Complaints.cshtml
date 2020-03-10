@@ -1,0 +1,72 @@
+﻿@model AdminViewModel
+@{
+    ViewData["Title"] = "Complaints";
+    Layout = "~/Views/Shared/_UserProfileLayout.cshtml";
+}
+
+@foreach (var item in Model.Complaints)
+{
+    string status = "success";
+    if (item.Checked == false)
+    {
+        status = "danger";
+    }
+    <div class="panel panel-@status">
+        <div class="panel-heading">@item.Subject -User ID: @item.UserID -Blog ID: @item.ArticleID</div>
+        <div class="panel-body">
+            <p>@item.Text</p>
+            @Html.ActionLink("Go to Article", "ReadArticle", "Article", new { id = item.ArticleID, cid = item.ID }, new { @class = "btn btn-info btn-xs" })
+            @*<a asp-controller="Article" asp-action="ReadArticle" asp-route-id="">Go to Blog</a>*@
+            @if (item.Checked == false)
+            {
+                <button id=@item.ID class="btn btn-@status btn-xs checkReport">Check Report</button>
+            }
+            else
+            {
+                <label style="font-size:14px" class="btn btn-@status btn-xs">Checked</label>
+            }
+        </div>
+    </div>
+
+}
+
+
+
+
+<br /><br />
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="~/Content/jquery-confirm.min.css" />
+<script type="text/javascript" src="~/Scripts/jquery-confirm.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".checkReport").click(function () {
+                var deletedID = $(this).attr('id');
+
+                $.confirm({
+                    theme: 'light',
+                    boxWidth: '30%',
+                    title: '',
+                    content: 'Are you sure to check this report?',
+                    buttons: {
+                        Yes: {
+                            text: 'Yes',
+                            keys: ['enter', 'shift'],
+                            action: function () {
+
+                                $.ajax({
+                                    type: "POST",
+                                    url: '@Url.Action("CheckComplaints", "Admin")',
+                                    data: { id: deletedID },
+                                    success: function (data) {
+                                        window.location.reload();
+                                    }
+                                });
+                            }
+                        },
+                        No: function () {
+                        }
+                    }
+                });
+            });
+    });
+</script>

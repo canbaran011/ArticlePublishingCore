@@ -1,0 +1,34 @@
+﻿@model VComponentViewModels
+
+<br />
+<br />
+<br />
+<div class="text-center">
+    <img width="200px" height="200px" src=~/Images/@Model.User.ProfileImage />
+</div>
+<br />
+<br />
+<br />
+@if (Model.IsPrivate)
+{
+    <div class="list-group">
+        <a class="list-group-item list-group-item-info" asp-controller="Article" asp-action="AddArticle">Add Article</a>
+        <a class="list-group-item list-group-item-info" asp-controller="Article" asp-action="UserArticle">My Articles</a>
+        <a class="list-group-item list-group-item-info" asp-controller="Article" asp-action="FavouriteArticles">My Favourite Articles</a>
+        <a class="list-group-item list-group-item-info" asp-controller="Account" asp-action="UpdateInformation">Update information</a>
+        <a class="list-group-item list-group-item-info" asp-controller="Account" asp-action="ChangePassword">Change password</a>
+        <a class="list-group-item list-group-item-danger" asp-controller="Account" asp-action="DeleteAccount">Delete Account</a>
+        <a class="list-group-item list-group-item-danger" asp-controller="Account" asp-action="Logout">Logout</a>
+    </div>
+}
+else
+{
+    <div class="list-group">
+        <a href="/Account/UserArticles/?id=@Model.User.ID" class="list-group-item list-group-item-info">@Model.User.UserName Articles</a>
+        <a href="/Account/UserInformation/?id=@Model.User.ID" class="list-group-item list-group-item-info">@Model.User.UserName information</a>
+        <a href="/Account/UserFavouriteArticles/?id=@Model.User.ID" class="list-group-item list-group-item-info">@Model.User.UserName Favourite Article</a>
+        @*<a class="list-group-item list-group-item-info" asp-controller="Account" asp-action="UserInformation" asp-route-id="@Model.User.ID">@Model.User.UserName information</a>
+        <a class="list-group-item list-group-item-info" asp-controller="Account" asp-action="UserArticles" asp-route-id="@Model.User.ID">@Model.User.UserName blogs</a>
+        <a class="list-group-item list-group-item-info" asp-controller="Account" asp-action="UserFavouriteArticles" asp-route-id="@Model.User.ID">@Model.User.UserName  Favourite blogs</a>*@
+    </div>
+}

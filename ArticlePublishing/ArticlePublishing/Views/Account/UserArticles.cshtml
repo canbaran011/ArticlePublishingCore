@@ -1,0 +1,26 @@
+﻿@model ArticleViewModel
+@{
+    ViewData["Title"] = "UserArticles";
+    Layout = "~/Views/Shared/_UserProfileLayout.cshtml";
+}
+
+<h2>UserArticles</h2>
+
+@foreach (var item in Model.articlesList)
+{
+<div class="col-md-4" style="margin-bottom:20px">
+    <div class="col-md-12 blogCards text-center">
+        <a asp-controller="Article" asp-action="ReadArticle" asp-route-id="@item.ID"><img src="~/Images/@item.DefaultImage" /></a>
+    </div>
+    <div class="col-md-12 blogCards">
+        <h3>@item.Title </h3>
+    </div>
+
+    <div class="col-md-12 blogCards">
+        <h5>@item.Text. </h5>
+    </div>
+    <div class="col-md-12 blogCards">
+        <a asp-controller="Article" asp-action="ReadArticle" asp-route-id="@item.ID" class="btn btn-info">Read</a>
+    </div>
+</div>
+}

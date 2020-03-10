@@ -1,0 +1,15 @@
+﻿@model Users
+@{
+    ViewData["Title"] = "DeleteAccount";
+    Layout = "~/Views/Shared/_UserProfileLayout.cshtml";
+}
+
+
+@using (Html.BeginForm("DeleteAccount", "Account", FormMethod.Post))
+{
+    <br /> <br />
+    <h3>Hi @Model.Name @Model.Surname</h3> <br />
+    <label>Are you sure to delete your Account?</label> <br />
+    <input class="btn btn-danger" value="Yes" type="submit" /> @:&nbsp;
+    <a asp-controller="Account" asp-action="Profiles" class="btn btn-success">No</a>
+}

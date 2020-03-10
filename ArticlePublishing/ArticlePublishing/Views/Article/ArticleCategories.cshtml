@@ -1,0 +1,57 @@
+﻿@model ArticleViewModel
+@{
+    ViewData["Title"] = "ArticleCategories";
+}
+
+<h2>ArticleCategories</h2>
+
+
+<br />
+<br />
+<div class="col-md-3"><h5>@Model.articlesList.Count Blog Found.</h5></div>
+
+
+@foreach (var item in Model.articlesList)
+{
+    <div class="row col-md-12">
+        <br />
+        <div class="col-md-3 blogCards">
+            <a asp-controller="Article" asp-action="ReadArticle" asp-route-id="@item.ID"><img src="~/Images/@item.DefaultImage" alt="Alternate Text" /></a>
+            <br />
+        </div>
+        <div class="col-md-9">
+            <div class="col-md-12 col-xs-12">
+                <div class="pull-left"><h4>@ViewBag.CategoriName</h4></div>
+                <div class="pull-right"> <h5> <a class="btn btn-xs btn-warning" href="/Account/UserArticles/?id=@item.User.ID">by&nbsp;@item.User.UserName</a></h5></div>
+            </div>
+
+            <div class="col-md-12 blogCards">
+                <h3>@item.Title</h3>
+            </div>
+            <div class="col-md-12 blogCards">
+                <h5>@item.Text</h5>
+            </div>
+            <div class="col-md-12 iconSize">
+                <span> <b class="glyphicon glyphicon-calendar"></b>&nbsp;@Convert.ToDateTime(@item.AddDate).Date.ToString("dd.MM.yyy") &nbsp;&nbsp; &nbsp;</span>
+                <span> <b class="glyphicon glyphicon-comment"></b>&nbsp; @item.Comments.Count &nbsp; &nbsp; &nbsp;</span>
+
+
+                @if (item.FavouriteArticles.FirstOrDefault(x=> x.Liked == true) == null)
+                {
+                    //aynı id çok yerde verildi id sadece bloga ulaşmak için kullanılıyor.Id ile işlem yapılırsa compnentlerin çoğuna yapılan işlemi uygular.
+                    <span> <b style="font-size:20px" class="glyphicon glyphicon-heart-empty"></b>&nbsp; @item.NumOfLikes  &nbsp; &nbsp; &nbsp;</span>
+                }
+                else
+                {
+                    <span> <b style="color:red; font-size:20px" class="glyphicon glyphicon-heart"></b>&nbsp; @item.NumOfLikes &nbsp; &nbsp; &nbsp;</span>
+                }
+
+
+                <br /><br />
+                <a asp-controller="Article" asp-action="ReadArticle" asp-route-id="@item.ID" class="btn btn-info">Read</a>
+            </div>
+        </div>
+    </div>
+
+}
+

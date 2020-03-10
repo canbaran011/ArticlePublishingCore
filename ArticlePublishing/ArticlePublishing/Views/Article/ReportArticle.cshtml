@@ -1,0 +1,32 @@
+﻿@model ArticleViewModel
+@{
+    ViewData["Title"] = "ReportArticle";
+}
+
+<h2>ReportArticle</h2>
+
+<div class="col-md-6">
+    <form asp-controller="Article" asp-action="ReportArticle" method="post">
+        @Html.HiddenFor(x => x.article.ID)
+        <div class="input-group">
+            <span class="input-group-addon " id="txtSubject">Title</span>
+            <input asp-for="article.Title" type="text" class="form-control reportLabelTable" aria_describedby="txtTitle" @readonly=true, Style="font-weight:bold;" maxlenght=50 />
+            @*@Html.LabelFor(x => x.blog.Title, Model.blog.Text, new { @class = "form-control reportLabelTable", aria_describedby = "txtTitle" })*@
+
+        </div> <br />
+        <div class="input-group">
+            <span class="input-group-addon " id="txtSubject">Subject</span>
+            <input asp-for="complaints.Subject" type="text" class="form-control" placeholder = "Enter subject of to report" required = "required" aria_describedby="txtSubject" maxlenght=50 />
+            @*50 karakterle sınırlamadığı için hata veriyor*@
+        </div> <br />
+        <div class="input-group">
+            <span class="input-group-addon " id="txtText">Text</span>
+            <textarea asp-for="complaints.Text" style="resize:none" class = "form-control" placeholder = "Enter reason of to report" maxlength = "500" rows = "10" required = "required" aria_describedby = "txtText" ></textarea>
+        </div> <br />
+
+        <input class="btn btn-info" type="submit">
+
+    </form>
+    <br /><br />
+    <div class="alert alert-@ViewBag.Status" role="alert">@ViewBag.Warning</div>
+</div>

@@ -1,0 +1,57 @@
+﻿@model ArticleViewModel
+@{
+    ViewData["Title"] = "FavouriteArticles";
+    Layout = "~/Views/Shared/_UserProfileLayout.cshtml";
+}
+
+<h2>FavouriteArticles</h2>
+
+@foreach (var item in Model.articlesList)
+{
+    <div class="col-md-4">
+        <div class="col-md-12 blogCards text-center">
+            <a asp-controller="Article" asp-action="ReadArticle" asp-route-id="@item.ID"><img src="~/Images/@item.DefaultImage" /></a>
+        </div>
+        <div class="col-md-12 blogCards">
+            <h3>@item.Title </h3>
+        </div>
+
+        <div class="col-md-12 blogCards">
+            <h5>@item.Text </h5>
+        </div>
+        <div class="col-md-12 blogCards">
+            <a asp-controller="Article" asp-action="ReadArticle" asp-route-id="@item.ID" class="btn btn-info">Read</a>
+            <br /> <br />
+
+        </div>
+    </div>
+}
+
+
+@*<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="~/Content/jquery-confirm.min.css" />
+<script type="text/javascript" src="~/Scripts/jquery-confirm.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".RemoveFavourite").click(function () {
+            var blgID = $(this).attr('id');
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("RemoveFavourite", "Article")',
+                data: { blogID: blgID },
+                dataType: "json",
+                success: function (response) {
+                    if (response.success) {
+                        window.location.reload();
+                    } else {
+                        $.alert({
+                            title: 'Alert',
+                            content: response.text,
+                        });
+                    }
+                }
+            });
+        });
+
+    }
+</script>*@
